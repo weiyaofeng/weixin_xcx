@@ -1,0 +1,30 @@
+<!--pages/profile/profile.wxml-->
+
+<button bindtap="login">登陆</button>
+
+
+<button bindtap="uploadImg">上传图片</button>
+
+<view class="classname" wx:for="{{imgSrc}}">
+<image src="{{item}}"></image>
+
+</view>
+
+<form bindsubmit="formSubmit" report-submit>
+    <label>
+        地点
+        <input name="site" style="border:1px solid black"/>
+    </label>
+    <lebel>
+        <view class="section_title">选择日期</view>
+        <picker mode="date" value="{{date}}" start="2015-11-01" end="2017-11-01" bindchange="bindDateChange">
+            <view>当前选择：{{date}}</view>
+        </picker>
+    </lebel>
+    <label>
+        商品名称：
+        <input name="name" style="border:1px solid black"/>
+    </label>
+
+    <button form-type="submit">提交</button>
+</form>

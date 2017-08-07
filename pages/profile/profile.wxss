@@ -1,0 +1,5 @@
+/* pages/profile/profile.wxss */
+.classname{
+  text-align: center;
+  margin-top:10rpx;
+}

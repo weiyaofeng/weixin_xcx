@@ -1,0 +1,16 @@
+<!--pages/movie/movie.wxml-->
+ <page>
+     <scroll-view scroll-y="true">
+         <view class="meta">
+            <view class="classname"><image src="{{movie.images.large}}" style="background-size:cover" ></image></view>
+             <text class="title">{{movie.title}}({{movie.year}})</text>
+             <text class="info">导演：<block wx:for="{{movie.directors}}">{{item.name}}</block></text>
+             <text class="info">主演：<block wx:for="{{movie.casts}}">{{item.name}}</block></text>
+             <view class="summary">
+                    <text class="label">摘要：</text>
+                 <text class="content">{{movie.summary}}</text>
+             </view>
+         </view>
+
+     </scroll-view>
+ </page>
