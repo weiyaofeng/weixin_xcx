@@ -17,9 +17,6 @@
         <view class="rating">
             <text>{{item.rating.average}}</text>
         </view>
-        <view class="rating">
-            <text>{{item.rating.average}}</text>
-        </view>
     </view>
 </navigator>
 </scroll-view>
